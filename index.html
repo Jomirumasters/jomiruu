@@ -117,19 +117,16 @@
                   </div>
                 </div>
                 
+                
                 <!-- Section for page 1 -->
-                <section class="row align-items-stretch photos" id="section-photos-page-1" style="display: block;">
+               <section class="row align-items-stretch photos" id="section-photos-page-1" style="display: block;">
                   <div class="col-12">
                     <div class="row align-items-stretch">
                       <!-- Video blocks -->
-                      <style>
-                        .video-item, .video-item video {
-                          box-shadow: none;
-                        }
-                      </style>
+               
                       <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
                         <a href="Video/00_1 Logo athena_1.mp4" class="d-block video-item disable-link" data-fancybox="gallery">
-                          <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0" onwheel="disableScroll(event)" onmousedown="checkMouseWheel(event)">
+                          <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0" onmouseover="playVideo(this)"  onwheel="disableScroll(event)"  onmouseover="playVideo(this)" onmouseout="stopVideo(this)">
                             <source src="Video/00_1 Logo athena_1.mp4" type="video/mp4">
                           </video>
                           <div class="photo-text-more"></div>
@@ -137,7 +134,7 @@
                       </div>
                       <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
                         <a href="Video/00_2 Design In Motion.mp4" class="d-block video-item disable-link" data-fancybox="gallery">
-                          <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0" onwheel="disableScroll(event)" onmousedown="checkMouseWheel(event)">
+                          <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0" onwheel="disableScroll(event)"  onmouseover="playVideo(this)" onmouseout="stopVideo(this)">
                             <source src="Video/00_2 Design In Motion.mp4" type="video/mp4">
                           </video>
                           <div class="photo-text-more"></div>
@@ -145,7 +142,7 @@
                       </div>
                       <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
                         <a href="Video/00_3 Into data.mp4" class="d-block video-item disable-link" data-fancybox="gallery">
-                          <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0" onwheel="disableScroll(event)" onmousedown="checkMouseWheel(event)">
+                          <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0" onwheel="disableScroll(event)"  onmouseover="playVideo(this)" onmouseout="stopVideo(this)">
                             <source src="Video/00_3 Into data.mp4" type="video/mp4">
                           </video>
                           <div class="photo-text-more"></div>
@@ -153,7 +150,7 @@
                       </div>
                       <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
                         <a href="Video/04_Rise of Vikings.mp4" class="d-block video-item disable-link" data-fancybox="gallery">
-                          <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0" onwheel="disableScroll(event)" onmousedown="checkMouseWheel(event)">
+                          <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0" onwheel="disableScroll(event)"  onmouseover="playVideo(this)" onmouseout="stopVideo(this)">
                             <source src="Video/04_Rise of Vikings.mp4" type="video/mp4">
                           </video>
                           <div class="photo-text-more"></div>
@@ -161,7 +158,7 @@
                       </div>
                       <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
                         <a href="Video/05_Logo Trust.mp4" class="d-block video-item disable-link" data-fancybox="gallery">
-                          <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0" onwheel="disableScroll(event)" onmousedown="checkMouseWheel(event)">
+                          <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0" onwheel="disableScroll(event)"   onmouseover="playVideo(this)" onmouseout="stopVideo(this)">
                             <source src="Video/05_Logo Trust.mp4" type="video/mp4">
                           </video>
                           <div class="photo-text-more"></div>
@@ -169,7 +166,7 @@
                       </div>
                       <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
                         <a href="Video/00_5 Home Task.mp4" class="d-block video-item disable-link" data-fancybox="gallery">
-                          <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0" onwheel="disableScroll(event)" onmousedown="checkMouseWheel(event)">
+                          <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0" onwheel="disableScroll(event)"   onmouseover="playVideo(this)" onmouseout="stopVideo(this)">
                             <source src="Video/00_5 Home Task.mp4" type="video/mp4">
                           </video>
                           <div class="photo-text-more"></div>
@@ -179,62 +176,68 @@
                   </div>
                 </section>
                 
-                <!-- Section for page 2 -->
-                <section class="row align-items-stretch photos" id="section-photos-page-2" style="display: none;">
-                  <div class="col-12">
-                    <div class="row align-items-stretch">
-                      <!-- Next 6 video blocks -->
-                      <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
-                        <a href="Video/STOP MOTION.mp4" class="d-block video-item disable-link" data-fancybox="gallery">
-                          <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0" onwheel="disableScroll(event)" onmousedown="checkMouseWheel(event)">
-                            <source src="Video/STOP MOTION.mp4" type="video/mp4">
-                          </video>
-                          <div class="photo-text-more"></div>
-                        </a>
-                      </div>
-                      <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
-                        <a href="Video/VER 3 Clean Logo Reveal Animation.mp4" class="d-block video-item disable-link" data-fancybox="gallery">
-                          <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0" onwheel="disableScroll(event)" onmousedown="checkMouseWheel(event)">
-                            <source src="Video/VER 3 Clean Logo Reveal Animation.mp4" type="video/mp4">
-                          </video>
-                          <div class="photo-text-more"></div>
-                        </a>
-                      </div>
-                      <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
-                        <a href="Video/Mojuice.mp4" class="d-block video-item disable-link" data-fancybox="gallery">
-                          <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0" onwheel="disableScroll(event)" onmousedown="checkMouseWheel(event)">
-                            <source src="Video/Mojuice.mp4" type="video/mp4">
-                          </video>
-                          <div class="photo-text-more"></div>
-                        </a>
-                      </div>
-                      <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
-                        <a href="Video/Golden Hour.mp4" class="d-block video-item disable-link" data-fancybox="gallery">
-                          <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0" onwheel="disableScroll(event)" onmousedown="checkMouseWheel(event)">
-                            <source src="Video/Golden Hour.mp4" type="video/mp4">
-                          </video>
-                          <div class="photo-text-more"></div>
-                        </a>
-                      </div>
-                      <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
-                        <a href="" class="d-block video-item disable-link" data-fancybox="gallery">
-                          <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0" onwheel="disableScroll(event)" onmousedown="checkMouseWheel(event)">
-                            <source src="Video/indepth(1).mp4" type="video/mp4">
-                          </video>
-                          <div class="photo-text-more"></div>
-                        </a>
-                      </div>
-                      <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
-                        <a href="Video/Logo Animation 4.mp44" class="d-block video-item disable-link" data-fancybox="gallery">
-                          <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0" onwheel="disableScroll(event)" onmousedown="checkMouseWheel(event)">
-                            <source src="Video/Logo Animation 4.mp4" type="video/mp4">
-                          </video>
-                          <div class="photo-text-more"></div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
+
+            <!-- Section for page 2 -->
+  <section class="row align-items-stretch photos" id="section-photos-page-2" style="display: none;">
+    <div class="col-12">
+      <div class="row align-items-stretch">
+        <!-- Next 6 video blocks -->
+        <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
+          <a href="Video/STOP MOTION.mp4" class="d-block video-item disable-link" data-fancybox="gallery">
+            <video controlsList="nodownload" loop muted class="img-fluid mb-0"  onwheel="disableScroll(event)"  onmouseover="playVideo(this)" onmouseout="stopVideo(this)">
+              <source src="Video/STOP MOTION.mp4" type="video/mp4">
+            </video>
+            <div class="photo-text-more"></div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
+          <a href="Video/VER 3 Clean Logo Reveal Animation.mp4" class="d-block video-item disable-link" data-fancybox="gallery">
+            <video controlsList="nodownload" loop muted class="img-fluid mb-0"  onwheel="disableScroll(event)"  onmouseover="playVideo(this)" onmouseout="stopVideo(this)">
+              <source src="Video/VER 3 Clean Logo Reveal Animation.mp4" type="video/mp4">
+            </video>
+            <div class="photo-text-more"></div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
+          <a href="Video/Mojuice.mp4" class="d-block video-item disable-link" data-fancybox="gallery">
+            <video controlsList="nodownload" loop muted class="img-fluid mb-0"  onwheel="disableScroll(event)"  onmouseover="playVideo(this)" onmouseout="stopVideo(this)">
+              <source src="Video/Mojuice.mp4" type="video/mp4">
+            </video>
+            <div class="photo-text-more"></div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
+          <a href="Video/Golden Hour.mp4" class="d-block video-item disable-link" data-fancybox="gallery">
+            <video controlsList="nodownload" loop muted class="img-fluid mb-0"  onwheel="disableScroll(event)"  onmouseover="playVideo(this)" onmouseout="stopVideo(this)">
+              <source src="Video/Golden Hour.mp4" type="video/mp4">
+            </video>
+            <div class="photo-text-more"></div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
+          <a href="" class="d-block video-item disable-link" data-fancybox="gallery">
+            <video controlsList="nodownload" loop muted class="img-fluid mb-0"  onwheel="disableScroll(event)"  onmouseover="playVideo(this)" onmouseout="stopVideo(this)">
+              <source src="Video/indepth(1).mp4" type="video/mp4">
+            </video>
+            <div class="photo-text-more"></div>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
+          <a href="Video/Logo Animation 4.mp4" class="d-block video-item disable-link" data-fancybox="gallery">
+            <video controlsList="nodownload" loop muted class="img-fluid mb-0"  onwheel="disableScroll(event)"  onmouseover="playVideo(this)" onmouseout="stopVideo(this)">
+              <source src="Video/Logo Animation 4.mp4" type="video/mp4">
+            </video>
+            <div class="photo-text-more"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
@@ -294,6 +297,19 @@
                     </div>
                   </div>
                 </section>
+
+
+                <script src="path/to/aos.js"></script>
+                <script src="path/to/fancybox.js"></script>
+                <script>
+                  function playVideo(videoElement) {
+                    videoElement.play();
+                  }
+              
+                  function stopVideo(videoElement) {
+                    videoElement.pause();
+                  }
+                </script>
                 
                 
 
