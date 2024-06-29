@@ -126,7 +126,7 @@
                
                       <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
                         <a href="Video/00_1 Logo athena_1.mp4" class="d-block video-item disable-link" data-fancybox="gallery">
-                          <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0" onmouseover="playVideo(this)" ontouchstart="playVideo(this)">
+                          <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0">
                             <source src="Video/00_1 Logo athena_1.mp4" type="video/mp4">
                           </video>
                           <div class="photo-text-more"></div>
@@ -136,7 +136,7 @@
                       
                       <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
                         <a href="Video/00_2 Design In Motion.mp4" class="d-block video-item disable-link" data-fancybox="gallery">
-                          <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0" onmouseover="playVideo(this)" ontouchstart="playVideo(this)">
+                          <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0" >
                             <source src="Video/00_2 Design In Motion.mp4" type="video/mp4">
                           </video>
                           <div class="photo-text-more"></div>
@@ -144,7 +144,7 @@
                       </div>
                       <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
                         <a href="Video/00_3 Into data.mp4" class="d-block video-item disable-link" data-fancybox="gallery">
-                          <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0" onmouseover="playVideo(this)" ontouchstart="playVideo(this)">
+                          <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0" >
                             <source src="Video/00_3 Into data.mp4" type="video/mp4">
                           </video>
                           <div class="photo-text-more"></div>
@@ -152,7 +152,7 @@
                       </div>
                       <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
                         <a href="Video/04_Rise of Vikings.mp4" class="d-block video-item disable-link" data-fancybox="gallery">
-                          <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0" onmouseover="playVideo(this)" ontouchstart="playVideo(this)">
+                          <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0" >
                             <source src="Video/04_Rise of Vikings.mp4" type="video/mp4">
                           </video>
                           <div class="photo-text-more"></div>
@@ -160,7 +160,7 @@
                       </div>
                       <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
                         <a href="Video/05_Logo Trust.mp4" class="d-block video-item disable-link" data-fancybox="gallery">
-                          <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0" onmouseover="playVideo(this)" ontouchstart="playVideo(this)">
+                          <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0" >
                             <source src="Video/05_Logo Trust.mp4" type="video/mp4">
                           </video>
                           <div class="photo-text-more"></div>
@@ -168,7 +168,7 @@
                       </div>
                       <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
                         <a href="Video/00_5 Home Task.mp4" class="d-block video-item disable-link" data-fancybox="gallery" >
-                          <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0" onmouseover="playVideo(this)" ontouchstart="playVideo(this)">
+                          <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0">
                             <source src="Video/00_5 Home Task.mp4" type="video/mp4">
                           </video>
                           <div class="photo-text-more"></div>
@@ -181,47 +181,70 @@
 
 
 
-                <!-- Section for page 2 -->
-
-                <section class="row align-items-stretch photos" id="section-photos-page-2">
-                  <div class="col-12">
-                    <div class="row align-items-stretch">
-                      <!-- Video blocks -->
-                      <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
-                        <a href="Video/Skillshare logo animation.mp4" class="d-block video-item disable-link" data-fancybox="gallery">
-                          <video controlsList="nodownload" loop muted class="img-fluid mb-0" onmouseover="playVideo(this)" ontouchstart="playVideo(this)">
-                            <source src="Video/Skillshare logo animation.mp4" type="video/mp4">
-                          </video>
-                          <div class="photo-text-more"></div>
-                        </a>
-                      </div>
-                      <!-- Repeat for other videos... -->
+        <!-- Section for page 2 -->
+<section class="row align-items-stretch photos" id="section-photos-page-2" style="display: none;">
+  <div class="col-12">
+    <div class="row align-items-stretch">
 
 
 
 
-                      
-                    </div>
-                  </div>
-                </section>
+      
+      <!-- Video blocks -->
+      <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
+        <a href="Video/Skillshare logo animation.mp4" class="d-block video-item disable-link" data-fancybox="gallery" onclick="playVideo(event, 'Video/Skillshare logo animation.mp4')">
+          <img src="images/images main/Skillshare-logo.png" class="img-fluid mb-0" onmouseover="this.style.cursor='pointer'" ontouchstart="this.style.cursor='pointer'">
+          <div class="photo-text-more"></div>
+        </a>
+      </div>
+      <!-- Repeat for other videos... -->
 
-                <script>
-                  // Function to handle video play on hover or touch
-                  function playVideo(video) {
-                    // Pause all other videos first
-                    document.querySelectorAll('.video-item video').forEach(function (vid) {
-                      if (vid !== video) {
-                        vid.pause();
-                        vid.currentTime = 0; // Reset video to start
-                      }
-                    });
-                
-                    // Check if video is not playing already
-                    if (video.paused) {
-                      video.play();
-                    }
-                  }
-                </script>
+  <!-- Video blocks -->
+  <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
+    <a href="Video/STOP MOTION.mp4" class="d-block video-item disable-link" data-fancybox="gallery" onclick="playVideo(event, 'Video/STOP MOTION.mp4')">
+      <img src="images/images main/stopmotion.png" class="img-fluid mb-0" onmouseover="this.style.cursor='pointer'" ontouchstart="this.style.cursor='pointer'">
+      <div class="photo-text-more"></div>
+    </a>
+  </div>
+  <!-- Repeat for other videos... -->
+   
+    <!-- Video blocks -->
+    <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
+      <a href="Video/VER 3 Clean Logo Reveal Animation.mp4" class="d-block video-item disable-link" data-fancybox="gallery" onclick="playVideo(event, 'Video/VER 3 Clean Logo Reveal Animation.mp4')">
+        <img src="images/images main/clean-logo.png" class="img-fluid mb-0" onmouseover="this.style.cursor='pointer'" ontouchstart="this.style.cursor='pointer'">
+        <div class="photo-text-more"></div>
+      </a>
+    </div>
+    <!-- Repeat for other videos... -->
+
+
+        <!-- Video blocks -->
+        <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
+          <a href="Video/Ads 2.mp4" class="d-block video-item disable-link" data-fancybox="gallery" onclick="playVideo(event, 'Video/Ads 2.mp4')">
+            <img src="images/images main/ads-1.png" class="img-fluid mb-0" onmouseover="this.style.cursor='pointer'" ontouchstart="this.style.cursor='pointer'">
+            <div class="photo-text-more"></div>
+          </a>
+        </div>
+        <!-- Repeat for other videos... -->
+
+           <!-- Video blocks -->
+      <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
+        <a href="Video/OutKickz Limited.mp4" class="d-block video-item disable-link" data-fancybox="gallery" onclick="playVideo(event, 'Video/OutKickz Limited.mp4')">
+          <img src="images/images main/ads-2.png" class="img-fluid mb-0" onmouseover="this.style.cursor='pointer'" ontouchstart="this.style.cursor='pointer'">
+          <div class="photo-text-more"></div>
+        </a>
+      </div>
+      <!-- Repeat for other videos... -->
+
+
+          <!-- Video blocks -->
+      <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
+        <a href="Video/Fast food slide show.mp4" class="d-block video-item disable-link" data-fancybox="gallery" onclick="playVideo(event, 'Video/Fast food slide show.mp4')">
+          <img src="images/images main/fastfood.png" class="img-fluid mb-0" onmouseover="this.style.cursor='pointer'" ontouchstart="this.style.cursor='pointer'">
+          <div class="photo-text-more"></div>
+        </a>
+      </div>
+      <!-- Repeat for other videos... -->
 
 
 
@@ -229,44 +252,58 @@
 
 
 
-                
+
+
+
+
+
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <script>
-  function playVideo(event, container, videoSrc) {
-    event.preventDefault(); // Prevent the default link behavior
+  // Function to play video on click
+  function playVideo(event, videoSrc) {
+    event.preventDefault(); // Prevent default link behavior
 
-    const videoElement = document.createElement('video');
-    videoElement.setAttribute('controls', '');
-    videoElement.setAttribute('controlsList', 'nodownload');
-    videoElement.setAttribute('loop', '');
-    videoElement.setAttribute('autoplay', '');
-    videoElement.setAttribute('muted', '');
-    videoElement.setAttribute('class', 'img-fluid mb-0');
-    videoElement.setAttribute('onwheel', 'disableScroll(event)');
-    videoElement.innerHTML = `<source src="${videoSrc}" type="video/mp4">`;
+    const parentAnchor = event.currentTarget; // Use currentTarget instead of closest('a')
+    parentAnchor.innerHTML = ''; // Clear anchor content
 
-    container.innerHTML = '';
-    container.appendChild(videoElement);
-    videoElement.play();
+    const video = document.createElement('video');
+    video.src = videoSrc;
+    video.controls = true; // Show controls after click
+    video.controlsList = 'nodownload'; // Disable download button in controls
+    video.className = 'img-fluid mb-0';
 
-    // Set up fullscreen toggle
-    videoElement.addEventListener('click', (event) => {
-      event.stopPropagation(); // Prevent the event from bubbling up
-      if (videoElement.requestFullscreen) {
-        videoElement.requestFullscreen();
-      } else if (videoElement.mozRequestFullScreen) { // Firefox
-        videoElement.mozRequestFullScreen();
-      } else if (videoElement.webkitRequestFullscreen) { // Chrome, Safari, Opera
-        videoElement.webkitRequestFullscreen();
-      } else if (videoElement.msRequestFullscreen) { // IE/Edge
-        videoElement.msRequestFullscreen();
-      }
+    // Event listener to play video on click
+    video.addEventListener('loadedmetadata', function() {
+      video.play();
     });
-  }
 
-  function disableScroll(event) {
-    event.preventDefault();
+    parentAnchor.appendChild(video);
   }
 </script>
+
+
+
+
 
 
 
