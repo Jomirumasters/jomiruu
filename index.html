@@ -248,34 +248,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
     </div>
   </div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <script>
@@ -288,6 +263,9 @@
 
     const video = document.createElement('video');
     video.src = videoSrc;
+    video.autoplay = true; // Autoplay video
+    video.muted = true; // Mute the video to prevent autoplay issues
+    video.loop = false; // Do not loop the video
     video.controls = true; // Show controls after click
     video.controlsList = 'nodownload'; // Disable download button in controls
     video.className = 'img-fluid mb-0';
@@ -300,7 +278,6 @@
     parentAnchor.appendChild(video);
   }
 </script>
-
 
 
 
