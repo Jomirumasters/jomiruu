@@ -117,6 +117,15 @@
                   </div>
                 </div>
                 
+                <style>
+                  #idm-warning {
+                      display: none;
+                      color: red;
+                      font-size: 18px;
+                      text-align: center;
+                      margin-top: 20px;
+                  }
+              </style>
                 
                 <!-- Section for page 1 -->
                <section class="row align-items-stretch photos" id="section-photos-page-1" style="display: block;">
@@ -132,6 +141,7 @@
                           <div class="photo-text-more"></div>
                         </a>
                       </div>
+                      <div id="idm-warning">Video downloaders are not allowed on this site.</div>
 
                       
                       <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
@@ -343,7 +353,38 @@
 
 
                 
-                
+<script>
+  // Function to check for IDM's user-agent
+  function isIDM() {
+      const userAgent = navigator.userAgent;
+      return userAgent.includes("IDM");
+  }
+
+  // Function to disable video
+  function disableVideo() {
+      const videoElement = document.getElementById('video-element');
+      videoElement.pause();
+      videoElement.src = '';
+      document.getElementById('idm-warning').style.display = 'block';
+  }
+
+  // Function to load video
+  function loadVideo() {
+      if (isIDM()) {
+          disableVideo();
+      }
+  }
+
+  // Load video on page load
+  window.onload = loadVideo;
+</script>
+
+
+
+
+
+
+
 
 
 
