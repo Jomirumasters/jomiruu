@@ -255,6 +255,43 @@
 
 
 
+
+  <!-- Section for page 3 -->
+
+  <section class="row align-items-stretch photos" id="section-photos-page-3" style="display: none;">
+    <div class="col-12">
+      <div class="row align-items-stretch">
+        
+        <!-- Video blocks -->
+        <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
+          <a href="Video/Advanced Sneaker Commercial 1.mp4" class="d-block video-item disable-link" data-fancybox="gallery" onclick="playVideo(event, 'Video/Advanced Sneaker Commercial 1.mp4')">
+            <img src="images/images main/sneaker.gif" class="img-fluid mb-0" onmouseover="this.style.cursor='pointer'" ontouchstart="this.style.cursor='pointer'">
+            <div class="photo-text-more"></div>
+          </a>
+        </div>
+        
+        <!-- Repeat for other videos... -->
+        <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
+          <a href="Video/Coffe animation.mp4" class="d-block video-item disable-link" data-fancybox="gallery" onclick="playVideo(event, 'Video/Coffe animation.mp4')">
+            <img src="images/images main/coffe.gif" class="img-fluid mb-0" onmouseover="this.style.cursor='pointer'" ontouchstart="this.style.cursor='pointer'">
+            <div class="photo-text-more"></div>
+          </a>
+        </div>
+  
+        <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
+          <a href="Video/Burger animation.mp4" class="d-block video-item disable-link" data-fancybox="gallery" onclick="playVideo(event, 'Video/Burger animation.mp4')">
+            <img src="images/images main/burger.gif" class="img-fluid mb-0" onmouseover="this.style.cursor='pointer'" ontouchstart="this.style.cursor='pointer'">
+            <div class="photo-text-more"></div>
+          </a>
+        </div>
+  
+  
+      </div>
+    </div>
+  </section>
+
+
+
 <script>
   // Function to play video on click
   function playVideo(event, videoSrc) {
@@ -292,6 +329,7 @@
     <button id="back-button" disabled>&larr;</button>
     <a href="#" id="page-1-link" class="pagination-link active">1</a>
     <a href="#" id="page-2-link" class="pagination-link">2</a>
+    <a href="#" id="page-3-link" class="pagination-link">3</a>
     
     <button id="next-button">&rarr;</button>
   </div>
@@ -301,7 +339,7 @@
 
 <!-- JavaScript for pagination -->
 <script>
-  const pages = ['section-photos-page-1', 'section-photos-page-2',];
+  const pages = ['section-photos-page-1', 'section-photos-page-2', 'section-photos-page-3',];
   const backButton = document.getElementById('back-button');
   const nextButton = document.getElementById('next-button');
   const pageLinks = pages.map((_, index) => document.getElementById(`page-${index + 1}-link`));
