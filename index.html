@@ -120,6 +120,12 @@
     margin-bottom: 5px;
     scroll-margin-top: 5px;
   }
+
+  .video-fullbar {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+  }
 </style>
 
 <!-- Section for page 1 -->
@@ -203,49 +209,46 @@
           <div class="photo-text-more"></div>
         </a>
       </div>
+      <!-- Video blocks -->
       <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
         <a href="Video/Bubble Up.mp4" class="d-block video-item disable-link" data-fancybox="gallery" onclick="playVideo(event, 'Video/Bubble Up.mp4')">
           <img src="images/images main/bubble.gif" class="img-fluid mb-0" onmouseover="this.style.cursor='pointer'" ontouchstart="this.style.cursor='pointer'">
           <div class="photo-text-more"></div>
         </a>
       </div>
-
+        <!-- Video blocks -->
       <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
         <a href="Video/Burger animation.mp4" class="d-block video-item disable-link" data-fancybox="gallery" onclick="playVideo(event, 'Video/Burger animation.mp4')">
           <img src="images/images main/burger.gif" class="img-fluid mb-0" onmouseover="this.style.cursor='pointer'" ontouchstart="this.style.cursor='pointer'">
           <div class="photo-text-more"></div>
         </a>
       </div>
-
+       <!-- Video blocks -->
       <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
         <a href="Video/burgir&pizza.mp4" class="d-block video-item disable-link" data-fancybox="gallery" onclick="playVideo(event, 'Video/burgir&pizza.mp4')">
           <img src="images/images main/burgir-and-pizza.gif" class="img-fluid mb-0" onmouseover="this.style.cursor='pointer'" ontouchstart="this.style.cursor='pointer'">
           <div class="photo-text-more"></div>
         </a>
       </div>
-
+       <!-- Video blocks -->
       <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
         <a href="Video/Fast food slide show.mp4" class="d-block video-item disable-link" data-fancybox="gallery" onclick="playVideo(event, 'Video/Fast food slide show.mp4')">
           <img src="images/images main/fastfood.png" class="img-fluid mb-0" onmouseover="this.style.cursor='pointer'" ontouchstart="this.style.cursor='pointer'">
           <div class="photo-text-more"></div>
         </a>
       </div>
+
+
     </div>
   </div>
 </section>
 
-<style>
-  .video-fullbar {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover;
-  }
-</style>
 
 <!-- Section for page 3 -->
 <section class="row align-items-stretch photos" id="section-photos-page-3" style="display: none;">
   <div class="col-12">
     <div class="row align-items-stretch">
+
       <!-- Video blocks -->
       <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
         <a href="Video/Skillshare logo animation.mp4" class="d-block video-item disable-link" data-fancybox="gallery" onclick="playVideo(event, 'Video/Skillshare logo animation.mp4')">
@@ -261,18 +264,21 @@
           <div class="photo-text-more"></div>
         </a>
       </div>
+      <!-- Video blocks -->
       <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
         <a href="Video/VER 3 Clean Logo Reveal Animation.mp4" class="d-block video-item disable-link" data-fancybox="gallery" onclick="playVideo(event, 'Video/VER 3 Clean Logo Reveal Animation.mp4')">
           <img src="images/images main/clean-logo.png" class="img-fluid mb-0" onmouseover="this.style.cursor='pointer'" ontouchstart="this.style.cursor='pointer'">
           <div class="photo-text-more"></div>
         </a>
       </div>
+      <!-- Video blocks -->
       <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
         <a href="Video/OutKickz Limited.mp4" class="d-block video-item disable-link" data-fancybox="gallery" onclick="playVideo(event, 'Video/OutKickz Limited.mp4')">
           <img src="images/images main/ads-2.png" class="img-fluid mb-0" onmouseover="this.style.cursor='pointer'" ontouchstart="this.style.cursor='pointer'">
           <div class="photo-text-more"></div>
         </a>
       </div>
+      <!-- Video blocks -->
       <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
         <a href="Video/Ads 2.mp4" class="d-block video-item disable-link" data-fancybox="gallery" onclick="playVideo(event, 'Video/Ads 2.mp4')">
           <img src="images/images main/ads-1.png" class="img-fluid mb-0" onmouseover="this.style.cursor='pointer'" ontouchstart="this.style.cursor='pointer'">
@@ -285,6 +291,33 @@
 
 
 
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Add click event listener to each video item
+    const videoItems = document.querySelectorAll('.video-item');
+
+    videoItems.forEach(function(item) {
+      item.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        // Toggle display of video and image
+        const video = this.querySelector('video');
+        const image = this.querySelector('img');
+
+        if (video.style.display === 'none') {
+          video.style.display = 'block';
+          image.style.display = 'none';
+          video.play(); // Autoplay video
+        } else {
+          video.style.display = 'none';
+          image.style.display = 'block';
+          video.pause(); // Pause video if shown
+        }
+      });
+    });
+  });
+</script>
 
 
 
@@ -312,9 +345,6 @@
     parentAnchor.appendChild(video);
   }
 </script>
-
-
-
 
 
 
@@ -375,13 +405,7 @@
     showPage(currentPage);
   });
 </script>
-
-
-
-
-
-
-
+<!-- Pagination  END -->
 
 
 <script>
