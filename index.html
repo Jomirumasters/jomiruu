@@ -101,12 +101,11 @@
         </div>
       </section>
 
+
+
+
       <div class="container-fluid site-section">
 
-
-
-
-        
 
 <!----------------------------- Section for page 1 ----------------------------->
 
@@ -117,45 +116,39 @@
 </div>
 
 <style>
-  #idm-warning {
-    display: none;
-    color: red;
-    font-size: 18px;
-    text-align: center;
-    margin-top: 20px;
-  }
   .video-item {
     margin-bottom: 5px;
     scroll-margin-top: 5px;
-
   }
 </style>
 
 <!-- Section for page 1 -->
 <section class="row align-items-stretch photos" id="section-photos-page-1" style="display: block;">
   <div class="col-12">
+
     <div class="row align-items-stretch">
       <!-- Video blocks -->
       <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
-        <a href="Video/00_1 Logo athena_1.mp4" class="d-block video-item disable-link" data-fancybox="gallery">
+        <a href="Video/00_1 Logo athena_1.mp4" class="d-block video-item disable-link" data-fancybox="gallery" onclick="playVideo(event, 'Video/00_1 Logo athena_1.mp4')">
           <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0">
             <source src="Video/00_1 Logo athena_1.mp4" type="video/mp4">
           </video>
           <div class="photo-text-more"></div>
         </a>
       </div>
-      <div id="idm-warning">Video downloaders are not allowed on this site.</div>
+   
 
       <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
-        <a href="Video/00_2 Design In Motion.mp4" class="d-block video-item disable-link" data-fancybox="gallery">
+        <a href="Video/00_2 Design In Motion.mp4" class="d-block video-item disable-link" data-fancybox="gallery" onclick="playVideo(event, 'Video/00_2 Design In Motion.mp4')">
           <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0">
             <source src="Video/00_2 Design In Motion.mp4" type="video/mp4">
           </video>
           <div class="photo-text-more"></div>
         </a>
       </div>
+
       <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
-        <a href="Video/00_3 Into data.mp4" class="d-block video-item disable-link" data-fancybox="gallery">
+        <a href="Video/00_3 Into data.mp4" class="d-block video-item disable-link" data-fancybox="gallery" onclick="playVideo(event, 'Video/00_3 Into data.mp4')">
           <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0">
             <source src="Video/00_3 Into data.mp4" type="video/mp4">
           </video>
@@ -163,7 +156,7 @@
         </a>
       </div>
       <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
-        <a href="Video/04_Rise of Vikings.mp4" class="d-block video-item disable-link" data-fancybox="gallery">
+        <a href="Video/04_Rise of Vikings.mp4" class="d-block video-item disable-link" data-fancybox="gallery" onclick="playVideo(event, 'Video/04_Rise of Vikings.mp4')">
           <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0">
             <source src="Video/04_Rise of Vikings.mp4" type="video/mp4">
           </video>
@@ -171,7 +164,7 @@
         </a>
       </div>
       <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
-        <a href="Video/05_Logo Trust.mp4" class="d-block video-item disable-link" data-fancybox="gallery">
+        <a href="Video/05_Logo Trust.mp4" class="d-block video-item disable-link" data-fancybox="gallery" onclick="playVideo(event, 'Video/05_Logo Trust.mp4')">
           <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0">
             <source src="Video/05_Logo Trust.mp4" type="video/mp4">
           </video>
@@ -179,7 +172,7 @@
         </a>
       </div>
       <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
-        <a href="Video/00_5 Home Task.mp4" class="d-block video-item disable-link" data-fancybox="gallery">
+        <a href="Video/00_5 Home Task.mp4" class="d-block video-item disable-link" data-fancybox="gallery" onclick="playVideo(event, 'Video/00_5 Home Task.mp4')">
           <video controlsList="nodownload" loop autoplay muted class="img-fluid mb-0">
             <source src="Video/00_5 Home Task.mp4" type="video/mp4">
           </video>
@@ -194,6 +187,7 @@
 <section class="row align-items-stretch photos" id="section-photos-page-2" style="display: none;">
   <div class="col-12">
     <div class="row align-items-stretch">
+
       <!-- Repeat for other videos -->
       <div class="col-6 col-md-4 col-lg-4" data-aos="fade-up">
         <a href="Video/Coffe animation.mp4" class="d-block video-item disable-link" data-fancybox="gallery" onclick="playVideo(event, 'Video/Coffe animation.mp4')">
@@ -291,6 +285,9 @@
 
 
 
+
+
+
 <script>
   // Function to play video on click
   function playVideo(event, videoSrc) {
@@ -321,7 +318,6 @@
 
 
 
-
 <!-- Pagination -->
 <div class="col-12 text-center">
   <div class="custom-pagination">
@@ -329,218 +325,161 @@
     <a href="#" id="page-1-link" class="pagination-link active">1</a>
     <a href="#" id="page-2-link" class="pagination-link">2</a>
     <a href="#" id="page-3-link" class="pagination-link">3</a>
-    
+    <a href="#" id="page-4-link" class="pagination-link">4</a>
     <button id="next-button">&rarr;</button>
   </div>
 </div>
 
-
-
-<!-- JavaScript for pagination -->
 <script>
-  const pages = ['section-photos-page-1', 'section-photos-page-2', 'section-photos-page-3',];
-  const backButton = document.getElementById('back-button');
-  const nextButton = document.getElementById('next-button');
-  const pageLinks = pages.map((_, index) => document.getElementById(`page-${index + 1}-link`));
+  document.addEventListener('DOMContentLoaded', () => {
+    const paginationLinks = document.querySelectorAll('.pagination-link');
+    const pages = document.querySelectorAll('.photos');
+    const backButton = document.getElementById('back-button');
+    const nextButton = document.getElementById('next-button');
+    let currentPage = 0;
+    const totalPages = pages.length;
 
-  let currentPage = 0;
+    const showPage = (pageIndex) => {
+      pages.forEach((page, index) => {
+        page.style.display = index === pageIndex ? 'block' : 'none';
+      });
+      paginationLinks.forEach(link => link.classList.remove('active'));
+      paginationLinks[pageIndex].classList.add('active');
 
-  function showPage(pageIndex) {
-    pages.forEach((pageId, index) => {
-      document.getElementById(pageId).style.display = index === pageIndex ? 'block' : 'none';
-    });
-    pageLinks.forEach((link, index) => {
-      if (index === pageIndex) {
-        link.classList.add('active');
-      } else {
-        link.classList.remove('active');
+      backButton.disabled = (pageIndex === 0);
+      nextButton.disabled = (pageIndex === totalPages - 1);
+    };
+
+    backButton.addEventListener('click', () => {
+      if (currentPage > 0) {
+        currentPage -= 1;
+        showPage(currentPage);
       }
     });
 
-    backButton.disabled = pageIndex === 0;
-    nextButton.disabled = false; // Always enable the next button
-  }
-
-  backButton.addEventListener('click', function () {
-    if (currentPage > 0) {
-      currentPage--;
-      showPage(currentPage);
-    }
-  });
-
-  nextButton.addEventListener('click', function () {
-    if (currentPage < pages.length - 1) {
-      currentPage++;
-      showPage(currentPage);
-    }
-  });
-
-  pageLinks.forEach((link, index) => {
-    link.addEventListener('click', function () {
-      currentPage = index;
-      showPage(currentPage);
-    });
-  });
-
-  // Initialize the first page
-  showPage(0);
-</script>
-
-
-
-
-                
-<script>
-  // Function to check for IDM's user-agent
-  function isIDM() {
-      const userAgent = navigator.userAgent;
-      return userAgent.includes("IDM");
-  }
-
-  // Function to disable video
-  function disableVideo() {
-      const videoElement = document.getElementById('video-element');
-      videoElement.pause();
-      videoElement.src = '';
-      document.getElementById('idm-warning').style.display = 'block';
-  }
-
-  // Function to load video
-  function loadVideo() {
-      if (isIDM()) {
-          disableVideo();
-      }
-  }
-
-  // Load video on page load
-  window.onload = loadVideo;
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <script>
-   
-  
-    // Event listener to disable opening new tabs with mouse scroll wheel
-    document.addEventListener('wheel', function(event) {
-      if (event.button === 1) {
-        event.preventDefault();
+    nextButton.addEventListener('click', () => {
+      if (currentPage < totalPages - 1) {
+        currentPage += 1;
+        showPage(currentPage);
       }
     });
-  
-    // Disable middle mouse button default behavior
-    document.addEventListener('auxclick', function(event) {
-      if (event.button === 1) {
-        event.preventDefault();
-      }
-    });
-  </script>
 
-  
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const videoLinks = document.querySelectorAll('.video-item');
-      
-      videoLinks.forEach(function(link) {
-        link.addEventListener('click', function(event) {
-          event.preventDefault();
-          const video = this.querySelector('video');
-          if (video.requestFullscreen) {
-            video.requestFullscreen();
-          } else if (video.mozRequestFullScreen) {
-            video.mozRequestFullScreen();
-          } else if (video.webkitRequestFullscreen) {
-            video.webkitRequestFullscreen();
-          } else if (video.msRequestFullscreen) {
-            video.msRequestFullscreen();
-          }
-        });
+    paginationLinks.forEach((link, index) => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        currentPage = index;
+        showPage(currentPage);
       });
     });
-  </script>
 
-  <script>
-    $(document).ready(function() {
-      // Autoplay videos when clicked
-      $('.video-item video').click(function() {
-        if (this.paused) {
+    showPage(currentPage);
+  });
+</script>
+
+
+
+
+
+
+
+
+
+<script>
+  // Disable opening new tabs with mouse scroll wheel and middle mouse button
+  document.addEventListener('wheel', function(event) {
+    if (event.button === 1) {
+      event.preventDefault();
+    }
+  });
+
+  document.addEventListener('auxclick', function(event) {
+    if (event.button === 1) {
+      event.preventDefault();
+    }
+  });
+
+  // Fullscreen functionality for videos
+  document.addEventListener('DOMContentLoaded', function() {
+    const videoLinks = document.querySelectorAll('.video-item');
+
+    videoLinks.forEach(function(link) {
+      link.addEventListener('click', function(event) {
+        event.preventDefault();
+        const video = this.querySelector('video');
+        if (video) {
+          requestFullscreen(video);
+        }
+      });
+    });
+
+    // Autoplay and pause videos on click
+    $('.video-item video').click(function() {
+      togglePlay(this);
+    });
+
+    // Play videos when in view
+    $(window).on('scroll', function() {
+      $('video').each(function() {
+        if (isInView($(this))) {
           this.play();
         } else {
           this.pause();
         }
       });
-
-      // Fullscreen functionality
-      $('.video-item video').on('click', function() {
-        if (this.requestFullscreen) {
-          this.requestFullscreen();
-        } else if (this.mozRequestFullScreen) { /* Firefox */
-          this.mozRequestFullScreen();
-        } else if (this.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-          this.webkitRequestFullscreen();
-        } else if (this.msRequestFullscreen) { /* IE/Edge */
-          this.msRequestFullscreen();
-        }
-      });
-
-      // Play videos when in view
-      $(window).on('scroll', function() {
-        $('video').each(function() {
-          if (isScrolledIntoView($(this))) {
-            this.play();
-          } else {
-            this.pause();
-          }
-        });
-      });
-
-      // Helper function to check if an element is in view
-      function isScrolledIntoView(elem) {
-        var docViewTop = $(window).scrollTop();
-        var docViewBottom = docViewTop + $(window).height();
-        var elemTop = $(elem).offset().top;
-        var elemBottom = elemTop + $(elem).height();
-        return (elemTop <= docViewBottom) && (elemBottom >= docViewTop);
-      }
     });
-  </script>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-          // Get all the video links with the class "disable-link"
-          var videoLinks = document.querySelectorAll('.disable-link');
-      
-          // Loop through each video link
-          videoLinks.forEach(function(videoLink) {
-              // Add event listener for the click event
-              videoLink.addEventListener('click', function(event) {
-                  // Prevent the default behavior of the link
-                  event.preventDefault();
-      
-                  // Optionally, you can add a class to visually indicate that the link is disabled
-                  videoLink.classList.add('disabled-link');
-              });
-      
-              // Add event listener for the dragstart event
-              videoLink.addEventListener('dragstart', function(event) {
-                  // Prevent the default behavior of dragging
-                  event.preventDefault();
-              });
-          });
+    // Helper function to request fullscreen
+    function requestFullscreen(element) {
+      if (element.requestFullscreen) {
+        element.requestFullscreen();
+      } else if (element.mozRequestFullScreen) {
+        element.mozRequestFullScreen();
+      } else if (element.webkitRequestFullscreen) {
+        element.webkitRequestFullscreen();
+      } else if (element.msRequestFullscreen) {
+        element.msRequestFullscreen();
+      }
+    }
+
+    // Helper function to toggle play/pause
+    function togglePlay(video) {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    }
+
+    // Helper function to check if an element is in view
+    function isInView(elem) {
+      var docViewTop = $(window).scrollTop();
+      var docViewBottom = docViewTop + $(window).height();
+      var elemTop = $(elem).offset().top;
+      var elemBottom = elemTop + $(elem).height();
+      return (elemTop <= docViewBottom) && (elemBottom >= docViewTop);
+    }
+  });
+
+  // Disable link behavior and dragging
+  document.addEventListener('DOMContentLoaded', function() {
+    var videoLinks = document.querySelectorAll('.disable-link');
+
+    videoLinks.forEach(function(videoLink) {
+      videoLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        videoLink.classList.add('disabled-link');
       });
-      </script>
+
+      videoLink.addEventListener('dragstart', function(event) {
+        event.preventDefault();
+      });
+    });
+  });
+</script>
 
     <!-- Projects End -->
+
+
           
         
 
@@ -675,115 +614,111 @@
 
           <!----------- Updates ------------>
 
-        <section class="site-section" id="section-content">
-          <div class="container">
+          <section class="site-section" id="section-content">
+            <div class="container">
               <div class="row justify-content-center">
-                  <div class="col-md-8">
-                      <div class="row">
-                          <h2 class="heading" data-aos="fade-up">Content</h2>
-
-                             <!----------- PAGE 1 Updates ------------>
-                          
-                          <div id="page-1" class="page-content">
-                             
-                              <div class="col-md-12 mb-4" data-aos="fade-up">
-                                  <div class="d-md-flex d-block blog-entry align-items-start">
-                                      <div class="mr-0 mr-md-5 mb-3 img-wrap"><a href="https://www.instagram.com/reel/C7HdskeNKUY/?utm_source=ig_web_copy_link" target="_blank"><img src="images/images main/insta-post-2.png" alt="Image" class="img-fluid mb-0"></a></div>
-                                      <div>
-                                          <h2 class="mt-0 mb-2"><a href="https://www.instagram.com/reel/C7HdskeNKUY/?utm_source=ig_web_copy_link" target="_blank">Want to learn how to create this cool logo animation? Check this out! 😎✨</a></h2>
-                                          <div class="meta mb-3">Posted on <a href="https://www.instagram.com/reel/C7HdskeNKUY/?utm_source=ig_web_copy_link" target="_blank"> Instagram! 📸</a></div>
-                                          <p>"Drop a 'Course' for the link or 'Skillshare' for a free month! 😉📚"</p>
-                                      </div>
-                                  </div>
-                              </div>
-                              
-                     
-
-                          <div class="col-md-12 mb-4" data-aos="fade-up">
-                                  <div class="d-md-flex d-block blog-entry align-items-start">
-                                      <div class="mr-0 mr-md-5 mb-3 img-wrap"><a href="https://drive.google.com/drive/folders/1KOukJL11mNfwXIgzN5Shmg5B6IzNKo2n?usp=sharing"><img src="images/images main/For-assets.png" alt="Image" class="img-fluid mb-0"></a></div>
-                                      <div>
-                                          <h2 class="mt-0 mb-2"><a href="https://drive.google.com/drive/folders/1KOukJL11mNfwXIgzN5Shmg5B6IzNKo2n?usp=sharing" target="_blank">Free editing assets!</a></h2>
-                                          <div class="meta mb-3">Posted on <a href="https://drive.google.com/drive/folders/1KOukJL11mNfwXIgzN5Shmg5B6IzNKo2n?usp=sharing" target=" _blank">Google Drive 📂</a></div>
-                                          <p>You can access my personal editing assets 🎨 along with paid assets. Good luck! 🍀</p>
-                                      </div>
-                                  </div>
-                              </div>
-
-
-                              <div class="col-md-12 mb-4" data-aos="fade-up">
-                                <div class="d-md-flex d-block blog-entry align-items-start">
-                                    <div class="mr-0 mr-md-5 mb-3 img-wrap"><a href="https://skl.sh/3KW5FUE" target="_blank"><img src="images/images main/Skillsharecert.png" alt="Image" class="img-fluid mb-0"></a></div>
-                                    <div>
-                                        <h2 class="mt-0 mb-2"><a href="https://skl.sh/3KW5FUE" target="_blank">Want to start your freelancing journey? </a></h2>
-                                        <div class="meta mb-3">Posted on <a href="https://skl.sh/3Tsf1eN" target="_blank"> Skillshare✨</a></div>
-                                        <p>Find the best class that fits your career path! Check this out and start earning your own certificate! 📜</p>
-                                    </div>
-                                </div>
-                            </div>
-                  
+                <div class="col-md-8">
+                  <div class="row">
+                    <h2 class="heading" data-aos="fade-up">Content</h2>
+          
+                    <!-- PAGE 1 Updates -->
+                    <div id="page-1" class="page-content">
+                      <div class="col-md-12 mb-4" data-aos="fade-up">
+                        <div class="d-md-flex d-block blog-entry align-items-start">
+                          <div class="mr-0 mr-md-5 mb-3 img-wrap"><a href="https://www.instagram.com/reel/C7HdskeNKUY/?utm_source=ig_web_copy_link" target="_blank"><img src="images/images main/insta-post-2.png" alt="Image" class="img-fluid mb-0"></a></div>
+                          <div>
+                            <h2 class="mt-0 mb-2"><a href="https://www.instagram.com/reel/C7HdskeNKUY/?utm_source=ig_web_copy_link" target="_blank">Want to learn how to create this cool logo animation? Check this out! 😎✨</a></h2>
+                            <div class="meta mb-3">Posted on <a href="https://www.instagram.com/reel/C7HdskeNKUY/?utm_source=ig_web_copy_link" target="_blank"> Instagram! 📸</a></div>
+                            <p>"Drop a 'Course' for the link or 'Skillshare' for a free month! 😉📚"</p>
                           </div>
-                          
-                        <div class="col-12 text-center">
-                          <div class="custom-pagination">        
-                              <span id="page-1-link" class="pagination-link active">1</span>
-                                           
-                          </div>
+                        </div>
                       </div>
+          
+                      <div class="col-md-12 mb-4" data-aos="fade-up">
+                        <div class="d-md-flex d-block blog-entry align-items-start">
+                          <div class="mr-0 mr-md-5 mb-3 img-wrap"><a href="https://drive.google.com/drive/folders/1KOukJL11mNfwXIgzN5Shmg5B6IzNKo2n?usp=sharing"><img src="images/images main/For-assets.png" alt="Image" class="img-fluid mb-0"></a></div>
+                          <div>
+                            <h2 class="mt-0 mb-2"><a href="https://drive.google.com/drive/folders/1KOukJL11mNfwXIgzN5Shmg5B6IzNKo2n?usp=sharing" target="_blank">Free editing assets!</a></h2>
+                            <div class="meta mb-3">Posted on <a href="https://drive.google.com/drive/folders/1KOukJL11mNfwXIgzN5Shmg5B6IzNKo2n?usp=sharing" target=" _blank">Google Drive 📂</a></div>
+                            <p>You can access my personal editing assets 🎨 along with paid assets. Good luck! 🍀</p>
+                          </div>
+                        </div>
+                      </div>
+          
+                      <div class="col-md-12 mb-4" data-aos="fade-up">
+                        <div class="d-md-flex d-block blog-entry align-items-start">
+                          <div class="mr-0 mr-md-5 mb-3 img-wrap"><a href="https://skl.sh/3KW5FUE" target="_blank"><img src="images/images main/Skillsharecert.png" alt="Image" class="img-fluid mb-0"></a></div>
+                          <div>
+                            <h2 class="mt-0 mb-2"><a href="https://skl.sh/3KW5FUE" target="_blank">Want to start your freelancing journey? </a></h2>
+                            <div class="meta mb-3">Posted on <a href="https://skl.sh/3Tsf1eN" target="_blank"> Skillshare✨</a></div>
+                            <p>Find the best class that fits your career path! Check this out and start earning your own certificate! 📜</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <!-- Pagination -->
+                    <div class="col-12 text-center">
+                      <div class="custom-pagination">
+                        <span id="page-1-link" class="pagination-link active">1</span>
+                      </div>
+                    </div>
                   </div>
+                </div>
               </div>
-          </div>
-      </section>
+            </div>
+          </section>
+          
       
                <!-- updates script -->
 
-     <script>document.addEventListener('DOMContentLoaded', (event) => {
-      const paginationLinks = document.querySelectorAll('.pagination-link');
-      const pages = document.querySelectorAll('.page-content');
-      const backButton = document.getElementById('back-button');
-      const nextButton = document.getElementById('next-button');
-      let currentPage = 1;
-      const totalPages = pages.length;
-  
-      const showPage = (pageNum) => {
-          pages.forEach(page => {
-              page.style.display = 'none';
-          });
-          document.getElementById(`page-${pageNum}`).style.display = 'block';
-          paginationLinks.forEach(link => link.classList.remove('active'));
-          document.getElementById(`page-${pageNum}-link`).classList.add('active');
-  
-          backButton.disabled = (pageNum === 1);
-          nextButton.disabled = (pageNum === totalPages);
-      };
-  
-      paginationLinks.forEach(link => {
-          link.addEventListener('click', (e) => {
-              e.preventDefault();
-              const pageId = parseInt(e.target.id.replace('page-', ''));
-              currentPage = pageId;
-              showPage(currentPage);
-          });
-      });
-  
-      backButton.addEventListener('click', () => {
-          if (currentPage > 1) {
-              currentPage -= 1;
-              showPage(currentPage);
-          }
-      });
-  
-      nextButton.addEventListener('click', () => {
-          if (currentPage < totalPages) {
-              currentPage += 1;
-              showPage(currentPage);
-          }
-      });
-  
-      showPage(currentPage);
-  });
-  </script>
-
+               <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                  const updatePaginationLinks = document.querySelectorAll('#page-1-link');
+                  const updatePages = document.querySelectorAll('.page-content');
+                  const updateBackButton = document.getElementById('update-back-button');
+                  const updateNextButton = document.getElementById('update-next-button');
+                  let updateCurrentPage = 1;
+                  const updateTotalPages = updatePages.length;
+              
+                  const updateShowPage = (pageNum) => {
+                    updatePages.forEach(page => {
+                      page.style.display = 'none';
+                    });
+                    document.getElementById(`page-${pageNum}`).style.display = 'block';
+                    updatePaginationLinks.forEach(link => link.classList.remove('active'));
+                    document.getElementById(`page-${pageNum}-link`).classList.add('active');
+              
+                    updateBackButton.disabled = (pageNum === 1);
+                    updateNextButton.disabled = (pageNum === updateTotalPages);
+                  };
+              
+                  updatePaginationLinks.forEach(link => {
+                    link.addEventListener('click', (e) => {
+                      e.preventDefault();
+                      const pageId = parseInt(e.target.id.replace('page-', ''));
+                      updateCurrentPage = pageId;
+                      updateShowPage(updateCurrentPage);
+                    });
+                  });
+              
+                  updateBackButton.addEventListener('click', () => {
+                    if (updateCurrentPage > 1) {
+                      updateCurrentPage -= 1;
+                      updateShowPage(updateCurrentPage);
+                    }
+                  });
+              
+                  updateNextButton.addEventListener('click', () => {
+                    if (updateCurrentPage < updateTotalPages) {
+                      updateCurrentPage += 1;
+                      updateShowPage(updateCurrentPage);
+                    }
+                  });
+              
+                  updateShowPage(updateCurrentPage);
+                });
+              </script>
 
         
 
