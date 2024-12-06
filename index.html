@@ -319,11 +319,17 @@ updateDisplay();
 
                 <div data-aos="fade-up"  data-aos-delay="100">
                   <h2 class="">Hi I'm Jomil Raymundo</h2>
-                  <p>Hey there! I'm Jomiruu, a video editor, content creator, and motion graphics artist. I absolutely love what I do – there's nothing quite like weaving together visuals to tell a captivating story that hooks your audience.
-                   Whether through clever editing, out-of-the-box content creation, or mesmerizing motion graphics, I'm all about bringing your ideas to life in the most unique and engaging ways possible. <a href="https://www.instagram.com/jomiruu/" target="_blank"> 
-                   With a fresh perspective like mine</a>, I'm all about enhancing your brand by blending my expertise with a hefty dose of creativity. Think of me as your partner in crime when it comes to leaving a lasting impression.
-                  And hey, I'm always on the lookout for fresh ways to push the boundaries of visual storytelling.</p>
-                  <p>And when it comes to the new-age lifestyle industry, count on me to craft fresh styles that seamlessly adapt to the ever-evolving brand landscape. Let's collaborate, team up, and create some pure magic!</p>
+                  <p>Hey there! I'm Jomiruu, a video editor, content creator, and motion graphics artist. 
+                    I absolutely love what I do. It's been years since I started dreaming of becoming a freelance editor.
+                    It's been a tough process, but I finally figured out how to keep going.
+                  </p>
+                  <p style="text-align: justify;">
+                     With years of practice and experience, I’ve finally learned how to manipulate these software
+                     programs (Adobe Photoshop, Adobe After Effects, and Adobe Illustrator)  by watching a lot of videos on YouTube, Skillshare, and Patreon. From being a perfectionist 
+                     to doing it on my own, I can finally take on more work! I’m glad I did it! With practice, experience, and discipline, applying what I’ve learned, everything will fall into place. Every 1% matters!
+                                    
+
+                  </p>
                   <h3 class=" mt-5">Services</h3>
                   
                   <div class="d-block d-md-flex mt-5">
@@ -331,13 +337,12 @@ updateDisplay();
                       <ul class="ul-check list-unstyled primary">
                         <li>Motion Graphics</li>
                         <li>Promotional Video</li>
-                        <li>Ads</li>
+                        <li>Poster Design</li>
                       </ul>
                     </div>
                     <div class="mr-md-auto">
-                      <ul class="ul-check list-unstyled primary">
-                        <li>Instagram Reels</li>
-                        <li>Short-form Social Content</li>
+                      <ul class="ul-check list-unstyled primary">               
+                        <li>Short-Form, Long-Form Social Content</li>
                         <li>Intensive VIP Days</li>
                       </ul>
                     </div>
@@ -544,201 +549,225 @@ updateDisplay();
                 });
               </script>
 
-        
 
-          <!----------- Contact ------------>
-          <section class="site-section" id="section-contact">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <h2 class="mb-5 heading">Contact</h2>
-                        <form name="submit-to-google-sheet" id="contact-form">
-                            <div class="row form-group">
-                                <div class="col-md-6 mb-3 mb-md-0">
-                                    <label for="email">Email:</label>
-                                    <input type="email" id="email" class="form-control" name="email" required>
-                                    <div class="invalid-feedback">Please enter a valid email address.</div>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="subject">Subject:</label>
-                                    <input type="text" id="subject" class="form-control" name="subject" required>
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col-md-12">
-                                    <label for="content">What content are you focusing on now? Got a link to share?</label>
-                                    <input type="text" id="content" class="form-control" name="content" required>
-                                </div>
-                            </div>
-                            <div class="row form-group mb-5">
-                                <div class="col-md-12">
-                                    <label for="message">Message: (Need help with your content?)</label>
-                                    <textarea name="message" id="message" cols="30" rows="7" class="form-control" required></textarea>
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col-md-12">
-                                    <input type="submit" value="Send Message" class="btn btn-primary btn-md">
-                                </div>
-                            </div>
-                        </form>
-                        <div id="confirmation-message" style="display: none;">
-                            <p id="confirmation-text">Sent! Excited to keep working together!</p>
-                        </div>
-                        <div id="warning-message" style="display: none;">
-                            <p>Please fill out all the required fields correctly.</p>
-                        </div>
-       
-        
-      
-                        <h2 class="mb-5 heading mt-5">Book a Call</h2>
-                        <form name="submit-call-to-google-sheet" id="call-form">
-                            <div class="form-group">
-                                <label for="call-date">Date: (Let's schedule a call in 3-2 days. Thanks!)</label>
-                                <input type="date" id="call-date" class="form-control" name="date" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="call-time">Time:</label>
-                                <input type="time" id="call-time" class="form-control" name="time" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="user-email">Email:</label>
-                                <input type="email" id="user-email" class="form-control" name="email" required>
-                               
-                            </div>
-                            <button type="button" class="btn btn-primary" onclick="setDiscoveryCall()">Book Call</button>
-                        </form>
-                        <div id="confirmation-message-call" style="display: none;">
-                            <p>See you on Google Meet!</p>
-                        </div>
+<section class="site-section" id="section-contact">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h2 class="mb-5 heading">Contact</h2>
+
+        <!-- Contact Form -->
+        <form name="submit-to-google-sheet" id="contact-form" novalidate>
+          <!-- Email and Name -->
+          <div class="row form-group">
+            <div class="col-md-6">
+              <label for="email">Email:</label>
+              <input type="email" id="email" class="form-control" name="email" required>
+              <div class="invalid-feedback">Please enter a valid email address.</div>
+            </div>
+            <div class="col-md-6">
+              <label for="name">Name:</label>
+              <input type="text" id="name" class="form-control" name="name" required>
+              <div class="invalid-feedback">Name is required.</div>
+            </div>
+          </div>
+
+          <!-- Industry and Link -->
+          <div class="row form-group">
+            <div class="col-md-12">
+              <label for="industry">What industry are you focusing on now? Do you have a link to share?</label>
+              <input type="text" id="industry" class="form-control" name="industry" required>
+              <div class="invalid-feedback">Please specify your industry or share a link.</div>
+            </div>
+          </div>
+
+          <!-- Services Required -->
+          <div class="row form-group">
+            <div class="col-md-12">
+              <label for="services">Services Required:</label>
+              <select id="services" class="form-control" name="services" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="Poster Design">Poster Design</option>
+                <option value="Motion Graphics">Motion Graphics</option>
+                <option value="Promotional Video">Promotional Video</option>          
+                <option value="Intensive VIP Days">Intensive VIP Days</option>
+                <option value="Short-Form, Long-Form Social Content">Short-Form, Long-Form Social Content</option>
+              </select>
+              <div class="invalid-feedback">Please select a service.</div>
+            </div>
+          </div>
+
+          <!-- Where Heard -->
+          <div class="row form-group">
+            <div class="col-md-12">
+              <label for="source">Where did you hear about me?</label>
+              <select id="source" class="form-control" name="source" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="YouTube">YouTube</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Twitter">Twitter</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Tiktok">Tiktok</option>
+                <option value="LinkedIn">LinkedIn</option>        
+                <option value="Friends or Family">Friends or Family</option>
+              </select>
+              <div class="invalid-feedback">Please tell us how you found us.</div>
+            </div>
+          </div>
+
+       <!-- Estimated Budget -->
+<div class="row form-group">
+  <div class="col-md-12">
+    <label for="budget">Estimated Budget (Required):</label>
+    <input type="text" 
+           id="budget" 
+           class="form-control" 
+           name="budget" 
+           required 
+           placeholder="$ Enter your budget" 
+           title="Enter a valid budget, e.g., $1234.56">
+    <div class="invalid-feedback">Please enter your budget (e.g., $1234.56).</div>
+  </div>
+</div>
 
 
-          
-        
-        <!-- Include the canvas-confetti library -->
-        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
-        
-        <!-- Add audio element for the thank you sound -->
-        <audio id="thank-you-sound" src="Video/Sound/Anthem Sound Effect.mp3" preload="auto"></audio>
-        <audio id="see-you-sound" src="path/to/see-you-sound.mp3" preload="auto"></audio>
-        <audio id="confetti-sound" src="Video/Sound/Confetti sound.mp3" preload="auto"></audio>
-        
-        <script>
-            // Script URL for the contact form
-            const scriptURLContact = 'https://script.google.com/macros/s/AKfycbwyj65Kkvz_eafqmmkLDUBbSEfmXGzQkkhLahuhHerl0MI4R3jPZofWz6f-EjaALYlJ/exec'; // Replace with your contact form script URL
-            // Script URL for the book a call form
-            const scriptURLCall = 'https://script.google.com/macros/s/AKfycbyfU50CElu0A79trN4WiA0Ti9EIG9iygG3H03aYASBhfR8IHqY78L6xZa9oW9fBN-lo/exec'; // Replace with your call booking script URL
-        
-           // Contact form submission
-const formContact = document.forms['submit-to-google-sheet'];
-let isSubmittingContact = false;
+          <!-- Project Description -->
+          <div class="row form-group mb-5">
+            <div class="col-md-12">
+              <label for="message">Description of your project (The more details, the better!):</label>
+              <textarea name="message" id="message" cols="30" rows="7" class="form-control" required></textarea>
+              <div class="invalid-feedback">Please provide details about your project.</div>
+            </div>
+          </div>
 
-formContact.addEventListener('submit', e => {
+          <!-- Submit Button -->
+          <div class="row form-group">
+            <div class="col-md-12">
+              <input type="submit" value="Send Message" class="btn btn-primary btn-md">
+            </div>
+          </div>
+        </form>
+
+        <!-- Confirmation and Warning Messages -->
+        <div id="confirmation-message" style="display: none;">
+          <p id="confirmation-text">Sent! Excited to keep working together!</p>
+        </div>
+        <div id="warning-message" style="display: none;">
+          <p>Please fill out all the required fields correctly.</p>
+        </div>
+
+        <!-- Loading Spinner -->
+        <div id="loading-spinner" style="display: none;">Submitting...</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('contact-form');
+  const budgetInput = document.getElementById('budget');
+  const sendButton = document.querySelector('input[type="submit"]');
+  const loadingSpinner = document.getElementById('loading-spinner');
+  const confirmationMessage = document.getElementById('confirmation-message');
+  const warningMessage = document.getElementById('warning-message');
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzu6Y4sXlmROUckAvPSHNe0JmHqA6BnbG-bxofVAvPm5LiUq0140H0ymej77swR8ZV4MQ/exec';
+
+  // Add dollar sign automatically during input and restrict non-numeric characters
+  budgetInput.addEventListener('input', function () {
+    let value = budgetInput.value;
+
+    // Remove anything that isn't a number or a dot
+    value = value.replace(/[^0-9.]/g, '');
+
+    // Ensure only one decimal point is allowed
+    if ((value.match(/\./g) || []).length > 1) {
+      value = value.replace(/\.$/, ''); // Remove extra dots
+    }
+
+    // Automatically add the dollar sign at the beginning
+    if (value) {
+      budgetInput.value = `$${value}`;
+    } else {
+      budgetInput.value = '';  // If there's no number, reset the value
+    }
+  });
+
+  // Handle form submission
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    if (isSubmittingContact) return;
-    isSubmittingContact = true;
-    const submitBtn = formContact.querySelector('[type="submit"]');
-    submitBtn.disabled = true;
 
-    fetch(scriptURLContact, { method: 'POST', body: new FormData(formContact)})
-        .then(response => response.json())
-        .then(data => {
-            if (data.result === 'success') {
-                document.getElementById('confirmation-message').style.display = 'block';
-                confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
-                document.getElementById('thank-you-sound').play();
-                document.getElementById('confetti-sound').play();
-                setTimeout(() => {
-                    formContact.reset();
-                    document.getElementById('confirmation-message').style.display = 'none';
-                }, 1000); // Reset the form after 1 second
-            } else {
-                throw new Error(data.error || 'Submission failed');
-            }
-        })
-        .catch(error => {
-            console.error('Error!', error.message);
-        })
-        .finally(() => {
-            isSubmittingContact = false;
-            submitBtn.disabled = false;
-        });
+    if (!form.checkValidity()) {
+      form.classList.add('was-validated');
+      showMessage('warning');  // Show the warning message
+      setTimeout(hideMessages, 2000); // Hide the warning after 2 seconds
+      console.warn('Form validation failed.');
+      return;
+    }
+
+    // Disable the "Send Message" button to prevent multiple clicks
+    sendButton.disabled = true;
+
+    // Show loading spinner
+    loadingSpinner.style.display = 'block';
+    confirmationMessage.style.display = 'none';
+    warningMessage.style.display = 'none';
+
+    try {
+      const response = await fetch(scriptURL, {
+        method: 'POST',
+        body: new FormData(form),
+      });
+
+      if (response.ok) {
+        showMessage('confirmation'); // Show the confirmation message
+        setTimeout(hideMessages, 2000); // Hide the confirmation after 2 seconds
+        form.reset();
+        form.classList.remove('was-validated');
+      } else {
+        throw new Error('Server Error: Failed to submit the form.');
+      }
+    } catch (error) {
+      showMessage('warning');  // Show the warning message on error
+      setTimeout(hideMessages, 2000); // Hide the warning after 2 seconds
+      console.error('Submission Error:', error);
+    } finally {
+      // Re-enable the "Send Message" button after form submission is complete
+      sendButton.disabled = false;
+      loadingSpinner.style.display = 'none';
+    }
+  });
+
+  // Function to show the appropriate message (confirmation or warning)
+  function showMessage(type) {
+    // Hide both messages first
+    confirmationMessage.style.display = 'none';
+    warningMessage.style.display = 'none';
+
+    // Show the appropriate message based on the type
+    if (type === 'confirmation') {
+      confirmationMessage.style.display = 'block';
+    } else if (type === 'warning') {
+      warningMessage.style.display = 'block';
+    }
+  }
+
+  // Function to hide both messages
+  function hideMessages() {
+    confirmationMessage.style.display = 'none';
+    warningMessage.style.display = 'none';
+  }
 });
 
 
-
-
-function setDiscoveryCall() {
-    const dateInput = document.getElementById('call-date').value;
-    let timeInput = document.getElementById('call-time').value;
-    const userEmail = document.getElementById('user-email').value;
-    const confirmationMessage = document.getElementById('confirmation-message-call');
-    const seeYouSound = document.getElementById('see-you-sound');
-    const confettiSound = document.getElementById('confetti-sound');
-    const formCall = document.getElementById('call-form');
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Regular expression for validating email
-
-    let callDate = new Date(dateInput + 'T' + timeInput);
-    let currentDate = new Date();
-
-    // Add AM or PM to the time input if it doesn't already exist
-    if (!/AM|PM/i.test(timeInput)) {
-        const hour = parseInt(timeInput.split(':')[0]);
-        timeInput += hour >= 12 ? ' PM' : ' AM';
-    }
-
-    if (!emailRegex.test(userEmail)) {
-        alert("Please enter a valid email address.");
-        return; // Stop further execution if email is invalid
-    }
-
-    if (callDate > currentDate) {
-        fetch(scriptURLCall, {
-            method: 'POST',
-            body: new URLSearchParams(new FormData(formCall))
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.result === 'success') {
-                // Display confirmation message
-                confirmationMessage.style.display = 'block';
-                // Play sounds
-                seeYouSound.play();
-                confettiSound.play();
-                // Trigger confetti
-                confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
-                // Reset form after 1 second
-                setTimeout(() => {
-                    formCall.reset();
-                    confirmationMessage.style.display = 'none';
-                }, 1000);
-            } else {
-                throw new Error(data.error || 'Submission failed');
-            }
-        })
-        .catch(error => {
-            console.error('Error!', error.message);
-        })
-        .finally(() => {
-            // Enable the submit button and reset submitting flag
-            isSubmittingContact = false;
-            submitBtn.disabled = false;
-        });
-    } else {
-        alert("Please provide a future date and time.");
-    }
-}
+</script>
 
 
 
 
-            
-        </script>
 
-          </div>
-       </div>
-    </div>
-</section>
+
+
 
 
 
