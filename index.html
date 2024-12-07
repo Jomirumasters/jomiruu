@@ -316,7 +316,7 @@ updateDisplay();
 
                 <div data-aos="fade-up"  data-aos-delay="100">
                   <h2 class="">Hi I'm Jomil Raymundo</h2>
-                  <p>Hey there! I'm Jomiruu, a video editor, content creator, and motion graphics artist. 
+                  <p>Hey there! I'm Jomiruu, a Video editor, and Graphic designer, Content creator, and Motion graphics artist. 
                     I absolutely love what I do. It's been years since I started dreaming of becoming a freelance editor.
                     It's been a tough process, but I finally figured out how to keep going.
                   </p>
@@ -558,7 +558,7 @@ updateDisplay();
               </script>
 
 
-<section class="site-section" id="section-contact">
+<section class="site-section" id="section-contact" >
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-8">
@@ -589,22 +589,38 @@ updateDisplay();
             </div>
           </div>
 
-          <!-- Services Required -->
+        <!-- Services Required -->
+        <form id="servicesForm" method="post" action="YOUR_WEB_APP_URL">
           <div class="row form-group">
             <div class="col-md-12">
               <label for="services">Services Required:</label>
-              <select id="services" class="form-control" name="services" required>
-                <option value="" disabled selected>Select a service</option>
-                <option value="Poster Design">Poster Design</option>
-                <option value="Motion Graphics">Motion Graphics</option>
-                <option value="Promotional Video">Promotional Video</option>          
-                <option value="Intensive VIP Days">Intensive VIP Days</option>
-                <option value="Short-Form, Long-Form Social Content">Short-Form, Long-Form Social Content</option>
-              </select>
-              <div class="invalid-feedback">Please select a service.</div>
+              <div id="services">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="vectorIllustration" name="services[]" value="Vector Illustration">
+                  <label class="form-check-label" for="vectorIllustration">Vector Illustration</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="vipDays" name="services[]" value="Intensive VIP Days">
+                  <label class="form-check-label" for="vipDays">Intensive VIP Days</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="posterDesign" name="services[]" value="Poster, Layout Design">
+                  <label class="form-check-label" for="posterDesign">Poster, Layout Design</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="promoVideo" name="services[]" value="Promotional Video 2D">
+                  <label class="form-check-label" for="promoVideo">Promotional Video 2D</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="socialMediaContent" name="services[]" value="Short-Form, Long-Form Social Media Content">
+                  <label class="form-check-label" for="socialMediaContent">Short-Form, Long-Form Social Media Content</label>
+                </div>
+              </div>
+              <div class="invalid-feedback">Please select at least one service.</div>
             </div>
           </div>
-
+       
+        
           <!-- Where Heard -->
           <div class="row form-group">
             <div class="col-md-12">
@@ -618,6 +634,7 @@ updateDisplay();
                 <option value="Tiktok">Tiktok</option>
                 <option value="LinkedIn">LinkedIn</option>        
                 <option value="Friends or Family">Friends or Family</option>
+                <option value="Word of Mouth">Word of Mouth</option>
               </select>
               <div class="invalid-feedback">Please tell us how you found us.</div>
             </div>
@@ -680,7 +697,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const loadingSpinner = document.getElementById('loading-spinner');
   const confirmationMessage = document.getElementById('confirmation-message');
   const warningMessage = document.getElementById('warning-message');
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbzu6Y4sXlmROUckAvPSHNe0JmHqA6BnbG-bxofVAvPm5LiUq0140H0ymej77swR8ZV4MQ/exec';
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzFnRI0qrSuGJyqShWPzNQILNJobtUSFd4oYp2qbNp62-1iIXALMtEOkNujTWYwFEO5FA/exec';
 
   // Add dollar sign automatically during input and restrict non-numeric characters
   budgetInput.addEventListener('input', function () {
@@ -885,10 +902,7 @@ console.log("Video URL:", videoURL);
     alert('Copy action is disabled.'); 
   });
 
-  document.addEventListener('paste', function(e) { 
-    e.preventDefault(); 
-    alert('Paste action is disabled.'); 
-  });
+ 
 
 </script>
 
