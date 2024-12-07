@@ -9,6 +9,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
   <meta name="author" content="Untree.co">
   <link rel="shortcut icon" href="favicon-16x16.png">
 
@@ -27,9 +28,24 @@
   <link rel="stylesheet" href="css/fancybox.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Jomiruu Art</title>
+  
+  <!-- Fix for horizontal scroll -->
+  <style>
+    html, body {
+      overflow-x: hidden; /* Disable horizontal scrolling */
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box; /* Ensure padding and borders are included in element's width and height */
+    }
+
+   
+  </style>
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="200">
-
+  
   <div class="site-wrap">
 
     <!-- Mobile Menu -->
