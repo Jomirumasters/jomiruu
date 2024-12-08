@@ -59,11 +59,17 @@
     </div>
 
     <!-- Header Bar -->
-    <header class="header-bar d-flex d-lg-block align-items-center site-navbar-target" data-aos="fade-right">
+    <header class="header-bar1 d-flex d-lg-block align-items-center site-navbar-target" data-aos="fade-right">
+      <style>.header-bar1 {
+        overflow: hidden; /* Prevents scrolling */
+      
+      }
+      </style>
       <!-- Logo -->
       <div class="site-logo">
         <a href="index.html">Jomiruu</a>
       </div>
+    
 
       <!-- Main Menu -->
       <div class="main-menu">
@@ -97,7 +103,7 @@
           <div class="col-md-8 text-center">
             <h1 class="heading text-uppercase text-white" data-aos="fade-up">Bring everything to life.</h1>
             <p class="lead text-white mb-4" data-aos="fade-up" data-aos-delay="100">
-              Let's create something visually captivating together! 
+              Let's create something visually captivating together! <br>
               <a href="https://www.instagram.com/jomiruu/" target="_blank">visual journey</a> through 
               <a href="https://www.youtube.com/channel/UCKos7TshDwdU7ajgidS2YRg" target="_blank">motion graphics and video content creation.</a>
             </p>
@@ -109,6 +115,7 @@
       </section>
 
       <div class="container-fluid site-section">
+      
         <!-- Section for Projects --><!-- Section for Projects --><!-- Section for Projects -->   <!-- Section for Projects --><!-- Section for Projects --><!-- Section for Projects -->   <!-- Section for Projects --><!-- Section for Projects --><!-- Section for Projects -->
 
 
@@ -126,6 +133,36 @@
   <button class="btn btn-primary filter-btn" data-filter="motion">Motion Graphics</button>
   <button class="btn btn-primary filter-btn" data-filter="animation">Animation</button>
 </div>
+
+<style>
+.filter-buttons {
+  display: flex;
+  justify-content: center; /* Centers the buttons horizontally */
+  align-items: center; /* Centers the buttons vertically */
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-buttons .btn {
+  font-size: 18px; /* Default font size */
+  padding: 8px 16px; /* Default padding */
+}
+
+/* Media Query for mobile screens (up to 768px wide) */
+@media (max-width: 768px) {
+  .filter-buttons .btn {
+    font-size: 12px; /* Smaller font size on mobile */
+    padding: 5px 10px; /* Smaller padding on mobile */
+  }
+}
+
+</style>
+
+
 
 <!-- Section for Pages -->
 <div id="logo">
@@ -397,6 +434,7 @@ updateDisplay();
           <!-- Add other testimonials here -->
 
         </div>
+        
       </div>
     </div>
   </div>
